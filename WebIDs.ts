@@ -6,7 +6,7 @@ enum WebIDType {
     DefaultID = 'D'
 }
 
-function WebIDFromAttributePathClean(path: string):string {
+export function WebIDFromAttributePathClean(path: string):string {
     const WebIDtype: string = WebIDType.PathOnly;
     const version: string = '1';
     const marker: string = 'AB';
@@ -16,7 +16,7 @@ function WebIDFromAttributePathClean(path: string):string {
     return WebID;
 }
 
-function WebIDFromElementAttributePath(path: string):string {
+export function WebIDFromElementAttributePath(path: string):string {
     const WebIDtype: string = 'P';
     const version: string = '1';
     const marker: string = 'AB';

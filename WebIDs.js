@@ -1,3 +1,6 @@
+"use strict";
+exports.__esModule = true;
+exports.WebIDFromElementAttributePath = exports.WebIDFromAttributePathClean = void 0;
 var WebIDType;
 (function (WebIDType) {
     WebIDType["PathOnly"] = "P";
@@ -15,6 +18,7 @@ function WebIDFromAttributePathClean(path) {
     var WebID = WebIDtype + version + marker + baseElementMarker + namePayload;
     return WebID;
 }
+exports.WebIDFromAttributePathClean = WebIDFromAttributePathClean;
 function WebIDFromElementAttributePath(path) {
     var WebIDtype = 'P';
     var version = '1';
@@ -24,6 +28,7 @@ function WebIDFromElementAttributePath(path) {
     var WebID = WebIDtype + version + marker + baseElementMarker + namePayload;
     return WebID;
 }
+exports.WebIDFromElementAttributePath = WebIDFromElementAttributePath;
 function WebIDFromPIPointPath(path) {
     var WebIDtype = 'P';
     var version = '1';
